@@ -27,7 +27,7 @@ export default function Experience() {
             <motion.div
               key={exp.company}
               variants={fadeUpVariant}
-              className="flex justify-between items-start gap-4 p-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl"
+              className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-4 p-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl"
             >
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm font-black mb-0.5">{exp.company}</h3>
@@ -43,7 +43,7 @@ export default function Experience() {
                   </ul>
                 )}
               </div>
-              <div className="text-right shrink-0">
+              <div className="sm:text-right shrink-0">
                 <p className="text-[10px] text-white/30">{exp.period}</p>
                 <p className="text-[10px] text-white/25">{exp.location}</p>
               </div>

@@ -34,7 +34,7 @@ export default function Nav() {
       <span className="font-black text-xl bg-gradient-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent tracking-tight">
         AAK
       </span>
-      <div className="flex gap-6">
+      <div className="flex gap-4 md:gap-6">
         {NAV_LINKS.map(({ label, id }) => (
           <a
             key={id}
