@@ -1,0 +1,99 @@
+<h2>Portfolio Layout Design</h2>
+<p class="subtitle">Full single-page layout — scroll order and section structure</p>
+
+<div class="mockup">
+  <div class="mockup-header">Full Page Layout Preview</div>
+  <div class="mockup-body" style="background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);padding:0;border-radius:8px;overflow:hidden;font-family:sans-serif;">
+
+    <!-- Nav -->
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 32px;background:rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.08);position:sticky;top:0;backdrop-filter:blur(10px);">
+      <div style="font-weight:800;font-size:18px;background:linear-gradient(90deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">AA</div>
+      <div style="display:flex;gap:20px;font-size:12px;color:rgba(255,255,255,0.6);">
+        <span>About</span><span>Skills</span><span>Projects</span><span>Experience</span><span style="color:#a78bfa;">Contact</span>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div style="padding:60px 32px 50px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.06);">
+      <div style="font-size:11px;letter-spacing:3px;color:#a78bfa;text-transform:uppercase;margin-bottom:12px;">Senior Frontend Engineer</div>
+      <div style="font-size:36px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;">Arsalan Ahmad<br/><span style="background:linear-gradient(90deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Khan</span></div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.5);max-width:320px;margin:12px auto 24px;">Building fast, accessible, and beautiful web experiences.</div>
+      <div style="display:flex;gap:12px;justify-content:center;">
+        <div style="padding:10px 22px;background:linear-gradient(90deg,#a78bfa,#60a5fa);color:#fff;border-radius:24px;font-size:12px;font-weight:700;">View Projects</div>
+        <div style="padding:10px 22px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);border-radius:24px;font-size:12px;">Download CV</div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div style="padding:36px 32px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:24px;align-items:center;">
+      <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#60a5fa);flex-shrink:0;"></div>
+      <div>
+        <div style="font-size:11px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase;margin-bottom:6px;">About Me</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6;">Short bio with your background, passion for frontend, and what makes you stand out as an engineer.</div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div style="padding:36px 32px;border-bottom:1px solid rgba(255,255,255,0.06);">
+      <div style="font-size:11px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase;margin-bottom:14px;">Tech Stack</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span style="padding:5px 12px;background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.3);color:#a78bfa;border-radius:20px;font-size:11px;">React</span>
+        <span style="padding:5px 12px;background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.3);color:#60a5fa;border-radius:20px;font-size:11px;">TypeScript</span>
+        <span style="padding:5px 12px;background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.3);color:#a78bfa;border-radius:20px;font-size:11px;">Next.js</span>
+        <span style="padding:5px 12px;background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.3);color:#60a5fa;border-radius:20px;font-size:11px;">Tailwind CSS</span>
+        <span style="padding:5px 12px;background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.3);color:#a78bfa;border-radius:20px;font-size:11px;">+ more</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div style="padding:36px 32px;border-bottom:1px solid rgba(255,255,255,0.06);">
+      <div style="font-size:11px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase;margin-bottom:14px;">Projects</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:14px;">
+          <div style="width:100%;height:50px;background:rgba(167,139,250,0.08);border-radius:6px;margin-bottom:8px;"></div>
+          <div style="font-size:12px;font-weight:700;color:#fff;margin-bottom:4px;">Project Name</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.4);">Description · Live · GitHub</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:14px;">
+          <div style="width:100%;height:50px;background:rgba(96,165,250,0.08);border-radius:6px;margin-bottom:8px;"></div>
+          <div style="font-size:12px;font-weight:700;color:#fff;margin-bottom:4px;">Project Name</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.4);">Description · Live · GitHub</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div style="padding:36px 32px;border-bottom:1px solid rgba(255,255,255,0.06);">
+      <div style="font-size:11px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase;margin-bottom:14px;">Experience</div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:2px;background:linear-gradient(180deg,#a78bfa,#60a5fa);border-radius:2px;flex-shrink:0;align-self:stretch;"></div>
+          <div>
+            <div style="font-size:12px;font-weight:700;color:#fff;">Company Name · Role</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.4);margin:2px 0;">2022 – Present</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.45);">Key accomplishment or responsibility</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <div style="width:2px;background:rgba(255,255,255,0.1);border-radius:2px;flex-shrink:0;align-self:stretch;"></div>
+          <div>
+            <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.7);">Previous Company · Role</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.3);">2019 – 2022</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div style="padding:36px 32px;text-align:center;">
+      <div style="font-size:11px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase;margin-bottom:10px;">Contact</div>
+      <div style="font-size:20px;font-weight:800;color:#fff;margin-bottom:16px;">Let's work together</div>
+      <div style="display:flex;gap:10px;justify-content:center;">
+        <div style="padding:8px 18px;background:linear-gradient(90deg,#a78bfa,#60a5fa);color:#fff;border-radius:20px;font-size:11px;font-weight:700;">Email Me</div>
+        <div style="padding:8px 18px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.6);border-radius:20px;font-size:11px;">LinkedIn</div>
+        <div style="padding:8px 18px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.6);border-radius:20px;font-size:11px;">GitHub</div>
+      </div>
+    </div>
+
+  </div>
+</div>
