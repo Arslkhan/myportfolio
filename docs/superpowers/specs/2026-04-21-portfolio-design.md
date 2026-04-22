@@ -144,7 +144,7 @@ export interface SkillGroup {
           I've spent 8 years obsessing over performance, UX,
           and the tiny details that make users stay.
 [ctas]    See My Work ↓   |   Get In Touch
-[footer]  📍 Dammam, Saudi Arabia · Open to remote & relocation
+[footer]  📍 Dammam, Saudi Arabia
 ```
 
 ---
@@ -157,7 +157,7 @@ ecommerce experiences for millions of users across the Middle East.
 I care deeply about performance, accessibility, and shipping things
 that actually work in production.
 
-Currently in Dammam · Open to remote & relocation
+Currently in Dammam 
 ```
 
 ---
