@@ -64,7 +64,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.p variants={fadeUpVariant} className="mt-5 text-xs text-white/30">
-          📍 Dammam, Saudi Arabia · Open to remote &amp; relocation
+          📍 Dammam, Saudi Arabia 
         </motion.p>
       </motion.div>
     </section>
