@@ -13,7 +13,8 @@ const TAG_COLORS = {
 const tagColor = (i: number) => TAG_COLORS[(i % 3) as keyof typeof TAG_COLORS]
 
 export default function Projects() {
-  const featured = projects.find((p) => p.featured)!
+  const featured = projects.find((p) => p.featured)
+  if (!featured) return null
   const professional = projects.filter((p) => !p.featured)
 
   return (
@@ -26,7 +27,14 @@ export default function Projects() {
             </p>
             <h2 className="text-2xl font-black">Things I&apos;ve built</h2>
           </div>
-          <span className="text-xs text-white/30">GitHub →</span>
+          <a
+            href="https://github.com/Arslkhan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-white/30 hover:text-white/60 transition-colors"
+          >
+            GitHub →
+          </a>
         </div>
 
         <div className="bg-[var(--surface)] border border-[rgba(167,139,250,0.2)] rounded-2xl overflow-hidden mb-4">

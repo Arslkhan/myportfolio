@@ -36,7 +36,7 @@ export default function Contact() {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Arslkhan"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border border-white/15 text-white/65 rounded-full text-sm hover:border-white/30 hover:text-white/90 transition-all"
