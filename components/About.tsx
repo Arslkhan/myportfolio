@@ -22,7 +22,7 @@ export default function About() {
             production.
           </p>
           <p className="text-xs text-white/35">
-            Currently in Dammam · Open to remote &amp; relocation
+            Currently in Dammam
           </p>
         </div>
       </motion.div>
