@@ -1,7 +1,7 @@
 export interface Experience {
   company: string
-  role: string
-  location: string
+  role?: string
+  location?: string
   period: string
   bullets?: string[]
 }
@@ -32,8 +32,6 @@ export const experiences: Experience[] = [
   },
   {
     company: 'Tile Mountain · Creative Tech Solutions · Histone Solutions',
-    role: '',
-    location: '',
     period: '2018 – 2022',
   },
 ]

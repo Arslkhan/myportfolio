@@ -2,12 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { fadeUpVariant, staggerContainerVariant } from '@/lib/animations'
+import { scrollToSection } from '@/lib/scroll'
 
 export default function Hero() {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <section
       id="hero"
@@ -50,13 +47,13 @@ export default function Hero() {
 
         <motion.div variants={fadeUpVariant} className="flex gap-3 flex-wrap items-center">
           <button
-            onClick={() => scrollTo('projects')}
+            onClick={() => scrollToSection('projects')}
             className="px-7 py-3 bg-gradient-to-r from-accent-purple to-accent-blue text-white rounded-full text-sm font-bold hover:opacity-90 transition-opacity"
           >
             See My Work ↓
           </button>
           <button
-            onClick={() => scrollTo('contact')}
+            onClick={() => scrollToSection('contact')}
             className="px-7 py-3 border border-white/15 text-white/70 rounded-full text-sm hover:border-white/30 hover:text-white/90 transition-all"
           >
             Get In Touch

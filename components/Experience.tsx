@@ -31,7 +31,7 @@ export default function Experience() {
             >
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm font-black mb-0.5">{exp.company}</h3>
-                <p className="text-xs text-accent-purple font-semibold mb-2">{exp.role}</p>
+                {exp.role && <p className="text-xs text-accent-purple font-semibold mb-2">{exp.role}</p>}
                 {exp.bullets && (
                   <ul className="space-y-1">
                     {exp.bullets.map((bullet) => (
@@ -45,7 +45,7 @@ export default function Experience() {
               </div>
               <div className="sm:text-right shrink-0">
                 <p className="text-[10px] text-white/30">{exp.period}</p>
-                <p className="text-[10px] text-white/25">{exp.location}</p>
+                {exp.location && <p className="text-[10px] text-white/25">{exp.location}</p>}
               </div>
             </motion.div>
           ))}

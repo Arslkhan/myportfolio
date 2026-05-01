@@ -3,17 +3,14 @@
 import { motion } from 'framer-motion'
 import { projects } from '@/data/projects'
 import { fadeUpVariant, staggerContainerVariant, sectionProps } from '@/lib/animations'
+import { ACCENT_PILL_STYLES } from '@/lib/tokens'
 
-const TAG_COLORS = {
-  0: 'text-accent-purple border-[rgba(167,139,250,0.3)] bg-[rgba(167,139,250,0.1)]',
-  1: 'text-accent-blue border-[rgba(96,165,250,0.3)] bg-[rgba(96,165,250,0.1)]',
-  2: 'text-accent-green border-[rgba(52,211,153,0.3)] bg-[rgba(52,211,153,0.1)]',
-} as const
-
-const tagColor = (i: number) => TAG_COLORS[(i % 3) as keyof typeof TAG_COLORS]
+const TAG_COLOR_KEYS = ['purple', 'blue', 'green'] as const
+const tagColor = (i: number) => ACCENT_PILL_STYLES[TAG_COLOR_KEYS[i % 3]]
 
 export default function Projects() {
-  const featured = projects.find((p) => p.featured)!
+  const featured = projects.find((p) => p.featured)
+  if (!featured) return null
   const professional = projects.filter((p) => !p.featured)
 
   return (
@@ -26,7 +23,14 @@ export default function Projects() {
             </p>
             <h2 className="text-2xl font-black">Things I&apos;ve built</h2>
           </div>
-          <span className="text-xs text-white/30">GitHub →</span>
+          <a
+            href="https://github.com/Arslkhan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-white/30 hover:text-white/60 transition-colors"
+          >
+            GitHub →
+          </a>
         </div>
 
         <div className="bg-[var(--surface)] border border-[rgba(167,139,250,0.2)] rounded-2xl overflow-hidden mb-4">

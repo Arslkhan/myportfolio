@@ -3,12 +3,7 @@
 import { motion } from 'framer-motion'
 import { skillGroups } from '@/data/skills'
 import { sectionProps, staggerContainerVariant, fadeUpVariant } from '@/lib/animations'
-
-const PILL_COLORS = {
-  purple: 'text-accent-purple border-[rgba(167,139,250,0.3)] bg-[rgba(167,139,250,0.1)]',
-  blue: 'text-accent-blue border-[rgba(96,165,250,0.3)] bg-[rgba(96,165,250,0.1)]',
-  green: 'text-accent-green border-[rgba(52,211,153,0.3)] bg-[rgba(52,211,153,0.1)]',
-} as const
+import { ACCENT_PILL_STYLES } from '@/lib/tokens'
 
 export default function Skills() {
   return (
@@ -38,7 +33,7 @@ export default function Skills() {
                   <motion.span
                     key={item}
                     variants={fadeUpVariant}
-                    className={`px-4 py-2 border rounded-full text-sm font-medium ${PILL_COLORS[group.color]}`}
+                    className={`px-4 py-2 border rounded-full text-sm font-medium ${ACCENT_PILL_STYLES[group.color]}`}
                   >
                     {item}
                   </motion.span>
