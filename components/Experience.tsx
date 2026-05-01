@@ -35,7 +35,7 @@ export default function Experience() {
                 {exp.bullets && (
                   <ul className="space-y-1">
                     {exp.bullets.map((bullet) => (
-                      <li key={bullet} className="text-[11px] text-white/45 leading-relaxed flex gap-2">
+                      <li key={bullet} className="text-xs text-white/45 leading-relaxed flex gap-2">
                         <span className="text-accent-purple/50 shrink-0 mt-0.5">·</span>
                         {bullet}
                       </li>

@@ -108,10 +108,10 @@ export default function Projects() {
                 style={{ background: project.gradient }}
               />
               <h3 className="text-sm font-bold mb-1">{project.title}</h3>
-              <p className="text-[10px] text-white/40 leading-relaxed mb-2.5">{project.description}</p>
+              <p className="text-xs text-white/40 leading-relaxed mb-2.5">{project.description}</p>
               <div className="flex gap-1.5 flex-wrap mb-2.5">
                 {project.tags.map((tag, i) => (
-                  <span key={tag} className={`text-[9px] px-2 py-0.5 border rounded-xl ${tagColor(i)}`}>
+                  <span key={tag} className={`text-[10px] px-2 py-0.5 border rounded-xl ${tagColor(i)}`}>
                     {tag}
                   </span>
                 ))}
@@ -121,7 +121,7 @@ export default function Projects() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[9px] border border-[rgba(167,139,250,0.3)] text-accent-purple px-2.5 py-1 rounded-xl hover:bg-[rgba(167,139,250,0.1)] transition-colors inline-block"
+                  className="text-[10px] border border-[rgba(167,139,250,0.3)] text-accent-purple px-2.5 py-1 rounded-xl hover:bg-[rgba(167,139,250,0.1)] transition-colors inline-block"
                 >
                   Live ↗
                 </a>
