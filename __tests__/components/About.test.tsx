@@ -14,7 +14,7 @@ describe('About', () => {
 
   it('renders location text', () => {
     render(<About />)
-    expect(screen.getByText(/Open to remote/i)).toBeInTheDocument()
+    expect(screen.getByText(/Currently in Dammam/i)).toBeInTheDocument()
   })
 
   it('renders avatar initials', () => {
