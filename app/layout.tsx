@@ -28,6 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        {/* Fixed gradient background — avoids background-attachment: fixed iOS jank */}
+        <div
+          className="fixed inset-0 -z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(160deg, #0f0c29 0%, #302b63 50%, #24243e 100%)' }}
+          aria-hidden="true"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
