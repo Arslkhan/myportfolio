@@ -14,14 +14,14 @@ export default function Projects() {
   const professional = projects.filter((p) => !p.featured)
 
   return (
-    <section id="projects" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
+    <section id="projects" aria-labelledby="projects-heading" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
       <motion.div {...sectionProps}>
         <div className="flex justify-between items-baseline mb-6">
           <div>
             <p className="text-[10px] tracking-[3px] text-accent-purple uppercase font-semibold mb-1">
               Featured Work
             </p>
-            <h2 className="text-2xl font-black">Things I&apos;ve built</h2>
+            <h2 id="projects-heading" className="text-2xl font-black">Things I&apos;ve built</h2>
           </div>
           <a
             href="https://github.com/Arslkhan"

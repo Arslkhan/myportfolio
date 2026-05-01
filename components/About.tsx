@@ -5,7 +5,7 @@ import { sectionProps } from '@/lib/animations'
 
 export default function About() {
   return (
-    <section id="about" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
+    <section id="about" aria-label="About" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
       <motion.div {...sectionProps} className="flex gap-8 items-start flex-wrap md:flex-nowrap">
         <div className="w-20 h-20 rounded-full bg-gradient-to-br from-accent-purple via-accent-blue to-accent-green flex items-center justify-center text-2xl font-black shrink-0">
           AA

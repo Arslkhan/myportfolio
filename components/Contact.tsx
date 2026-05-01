@@ -7,13 +7,14 @@ export default function Contact() {
   return (
     <section
       id="contact"
+      aria-labelledby="contact-heading"
       className="px-8 md:px-16 lg:px-24 py-24 border-t border-white/[0.06] bg-[rgba(0,0,0,0.15)] text-center"
     >
       <motion.div {...sectionProps}>
         <p className="text-[10px] tracking-[3px] text-accent-purple uppercase font-semibold mb-4">
           Contact
         </p>
-        <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-3">
+        <h2 id="contact-heading" className="text-3xl md:text-4xl font-black tracking-tight mb-3">
           Got a project in mind?
         </h2>
         <p className="text-sm text-white/40 mb-8 max-w-sm mx-auto">

@@ -7,12 +7,12 @@ import { ACCENT_PILL_STYLES } from '@/lib/tokens'
 
 export default function Skills() {
   return (
-    <section id="stack" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
+    <section id="stack" aria-labelledby="stack-heading" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
       <motion.div {...sectionProps}>
         <p className="text-[10px] tracking-[3px] text-accent-purple uppercase font-semibold mb-2">
           Stack
         </p>
-        <h2 className="text-2xl font-black mb-1">The tools I reach for first</h2>
+        <h2 id="stack-heading" className="text-2xl font-black mb-1">The tools I reach for first</h2>
         <p className="text-xs text-white/35 mb-8">
           Not exhaustive — just what I trust to ship fast and right.
         </p>

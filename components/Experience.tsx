@@ -9,12 +9,12 @@ export default function Experience() {
   const condensed = experiences.filter((e) => !e.bullets)
 
   return (
-    <section id="experience" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
+    <section id="experience" aria-labelledby="experience-heading" className="px-8 md:px-16 lg:px-24 py-20 border-t border-white/[0.06]">
       <motion.div {...sectionProps}>
         <p className="text-[10px] tracking-[3px] text-accent-purple uppercase font-semibold mb-2">
           Experience
         </p>
-        <h2 className="text-2xl font-black mb-8">Where I&apos;ve Worked</h2>
+        <h2 id="experience-heading" className="text-2xl font-black mb-8">Where I&apos;ve Worked</h2>
 
         <motion.div
           variants={staggerContainerVariant}

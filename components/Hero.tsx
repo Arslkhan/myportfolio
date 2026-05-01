@@ -48,6 +48,7 @@ export default function Hero() {
         <motion.div variants={fadeUpVariant} className="flex gap-3 flex-wrap items-center">
           <button
             onClick={() => scrollToSection('projects')}
+            aria-label="See my work"
             className="px-7 py-3 bg-gradient-to-r from-accent-purple to-accent-blue text-white rounded-full text-sm font-bold hover:opacity-90 transition-opacity"
           >
             See My Work ↓
@@ -68,7 +69,8 @@ export default function Hero() {
         </motion.div>
 
         <motion.p variants={fadeUpVariant} className="mt-5 text-xs text-white/30">
-          📍 Dammam, Saudi Arabia 
+          <span aria-hidden="true">📍</span>{' '}
+          Dammam, Saudi Arabia · Open to remote &amp; relocation
         </motion.p>
       </motion.div>
     </section>
