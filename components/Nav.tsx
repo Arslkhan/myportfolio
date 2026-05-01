@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { scrollToSection } from '@/lib/scroll'
 
 const NAV_LINKS = [
   { label: 'Work', id: 'work' },
@@ -42,7 +43,7 @@ export default function Nav() {
 
   const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault()
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    scrollToSection(id)
   }
 
   return (
