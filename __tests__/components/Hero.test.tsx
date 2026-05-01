@@ -4,12 +4,12 @@ import Hero from '@/components/Hero'
 describe('Hero', () => {
   it('renders the main headline text', () => {
     render(<Hero />)
-    expect(screen.getByText(/I build fast/i)).toBeInTheDocument()
+    expect(screen.getByText(/I build scalable/i)).toBeInTheDocument()
   })
 
-  it('renders "beautiful" in the headline', () => {
+  it('renders "e-commerce" in the headline', () => {
     render(<Hero />)
-    expect(screen.getByText('beautiful')).toBeInTheDocument()
+    expect(screen.getByText(/e-commerce/i)).toBeInTheDocument()
   })
 
   it('renders "See My Work" CTA', () => {

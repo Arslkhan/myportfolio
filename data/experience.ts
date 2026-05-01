@@ -13,10 +13,10 @@ export const experiences: Experience[] = [
     location: 'Dammam, Saudi Arabia',
     period: 'Sep 2025 – Present',
     bullets: [
-      'Architect frontend for high-traffic ecommerce (millions of users)',
-      'Manage & mentor a team of 8 frontend engineers',
-      'Led Next.js SSR migration — LCP improved from ~4.5s → 2.5s (50% gain)',
-      '~15–30% conversion uplift through UX & performance improvements',
+      'Architect and scale CMS-driven ecommerce frontend for millions of users across the Middle East',
+      'Led Next.js SSR migration — LCP improved from ~4.5s → 2.5s, driving 15–30% conversion uplift',
+      'Built Contentful-powered UI systems enabling content updates without deployments',
+      'Manage and mentor a team of 8 frontend engineers across web and mobile',
     ],
   },
   {
@@ -25,9 +25,10 @@ export const experiences: Experience[] = [
     location: 'Dubai, UAE',
     period: 'Nov 2022 – Jun 2024',
     bullets: [
-      'Developed enterprise web applications with focus on performance and usability',
-      'Improved Core Web Vitals and optimized rendering strategies',
-      'Supported multilingual (English/Arabic) workflows',
+      'Developed enterprise platform for 3,500+ equipment units across UAE, Saudi Arabia, and Oman',
+      'Implemented clean architecture separating data, domain, and presentation layers',
+      'Optimized Core Web Vitals and rendering strategies for performance at scale',
+      'Delivered full multilingual (English/Arabic) support across the platform',
     ],
   },
   {

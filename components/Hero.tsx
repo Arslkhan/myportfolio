@@ -29,20 +29,20 @@ export default function Hero() {
           variants={fadeUpVariant}
           className="text-5xl md:text-6xl font-black leading-[1.05] tracking-[-2px] mb-5"
         >
-          I build fast,{' '}
+          I build scalable{' '}
           <span className="bg-gradient-to-r from-accent-purple via-accent-blue to-accent-green bg-clip-text text-transparent">
-            beautiful
+            e-commerce
           </span>{' '}
-          web experiences.
+          &amp; CMS systems.
         </motion.h1>
 
         <motion.p
           variants={fadeUpVariant}
           className="text-sm text-white/50 max-w-md leading-relaxed mb-8"
         >
-          Hi, I&apos;m <strong className="text-white font-semibold">Arsalan</strong> — a Frontend
-          Lead with 8 years obsessing over performance, UX, and the tiny details that make users
-          stay.
+          Hi, I&apos;m <strong className="text-white font-semibold">Arsalan</strong> — a Senior
+          Frontend Engineer specializing in Next.js, Flutter, and modern frontend architecture.
+          I build systems that perform at scale and ship without friction.
         </motion.p>
 
         <motion.div variants={fadeUpVariant} className="flex gap-3 flex-wrap items-center">

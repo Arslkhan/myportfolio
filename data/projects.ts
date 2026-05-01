@@ -12,7 +12,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: 'TradeQuoter',
-    description: 'A mobile-first SaaS platform that lets tradespeople send professional PDF quotes in under 2 minutes — helping them win jobs by responding faster than competitors.',
+    description: 'Built a mobile-first SaaS platform enabling tradespeople to generate and send professional PDF quotes in under 2 minutes. Architected the full frontend from scratch — real-time form state, PDF generation, and a clean multi-step UX that converts.',
     tags: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS'],
     liveUrl: 'https://tradequoter.co/',
     featured: true,
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
   {
     title: 'GoldenScent',
-    description: 'High-traffic perfume & beauty ecommerce for the Middle East. Led SSR migration cutting LCP from 4.5s → 2.5s, achieving 15–30% conversion uplift.',
+    description: 'Led frontend architecture for a high-traffic perfume & beauty platform serving millions across the Middle East. Migrated to Next.js SSR — cut LCP from 4.5s to 2.5s and drove 15–30% conversion uplift through performance and UX improvements.',
     tags: ['Next.js', 'React', 'TypeScript', 'Contentful', 'GraphQL'],
     liveUrl: 'https://www.goldenscent.com/',
     featured: false,
@@ -30,8 +30,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Al Marwan Machinery',
-    description: 'Enterprise platform for heavy equipment rental & sales across UAE, SA & Oman — 3,500+ units.',
-    tags: ['React', 'TypeScript', 'REST API'],
+    description: 'Built an enterprise web platform for heavy equipment rental and sales across UAE, Saudi Arabia, and Oman — 3,500+ units. Focused on scalable architecture, Core Web Vitals, and multilingual (English/Arabic) support.',
+    tags: ['React', 'TypeScript', 'REST API', 'Clean Architecture'],
     liveUrl: 'https://almarwan.com/',
     featured: false,
     type: 'professional',
@@ -39,8 +39,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Tile Mountain',
-    description: "UK's leading tile & flooring retailer. Built full ecommerce frontend with performance optimizations.",
-    tags: ['Vue.js', 'Nuxt.js', 'Laravel'],
+    description: "Developed the full e-commerce frontend for the UK's leading tile and flooring retailer. Built on Vue Storefront and Magento — delivered modular component architecture and performance optimizations across the entire storefront.",
+    tags: ['Vue Storefront', 'Nuxt.js', 'Magento', 'REST API'],
     liveUrl: 'https://www.tilemountain.co.uk/',
     featured: false,
     type: 'professional',
@@ -48,8 +48,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Bathroom Mountain & Walls and Floors',
-    description: 'UK bathroom & tile ecommerce platforms — frontend development and speed optimizations.',
-    tags: ['Vue.js', 'Nuxt.js'],
+    description: 'Frontend development for two UK e-commerce platforms in the bathroom and tile space. Delivered reusable component systems, speed optimizations, and consistent UX across both storefronts.',
+    tags: ['Vue.js', 'Nuxt.js', 'Magento'],
     liveUrl: 'https://www.bathroommountain.co.uk/',
     featured: false,
     type: 'professional',

@@ -14,12 +14,18 @@ export default function About() {
           <p className="text-[10px] tracking-[3px] text-accent-purple uppercase font-semibold mb-3">
             About
           </p>
+          <p className="text-sm text-white/70 leading-relaxed max-w-lg mb-3">
+            I&apos;m a Frontend Engineer specializing in scalable e-commerce and CMS-driven
+            applications. I&apos;ve worked extensively with{' '}
+            <strong className="text-white font-semibold">Next.js</strong>,{' '}
+            <strong className="text-white font-semibold">Flutter</strong>,{' '}
+            <strong className="text-white font-semibold">Vue Storefront</strong>, and{' '}
+            <strong className="text-white font-semibold">Magento</strong> — focusing on performance,
+            clean architecture, and maintainable systems.
+          </p>
           <p className="text-sm text-white/70 leading-relaxed max-w-lg mb-4">
-            I&apos;m a Frontend Lead at{' '}
-            <strong className="text-white font-semibold">GoldenScent</strong>, where I architect
-            and scale ecommerce experiences for millions of users across the Middle East. I care
-            deeply about performance, accessibility, and shipping things that actually work in
-            production.
+            My work focuses on building flexible UI systems that allow teams to ship faster
+            without frequent deployments.
           </p>
           <p className="text-xs text-white/35">
             Currently in Dammam

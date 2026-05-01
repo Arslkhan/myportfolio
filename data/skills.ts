@@ -8,16 +8,16 @@ export const skillGroups: SkillGroup[] = [
   {
     label: 'Frontend',
     color: 'purple',
-    items: ['React', 'Next.js', 'TypeScript', 'Vue.js / Nuxt'],
+    items: ['Next.js', 'Flutter', 'Vue.js / Nuxt', 'TypeScript', 'React'],
   },
   {
-    label: 'Architecture & Perf',
+    label: 'Architecture & E-commerce',
     color: 'blue',
-    items: ['SSR/SSG/ISR', 'Core Web Vitals', 'TanStack Query', 'GraphQL'],
+    items: ['Bloc / Clean Architecture', 'Vue Storefront', 'Magento', 'SSR/SSG/ISR', 'REST APIs'],
   },
   {
-    label: 'Tools',
+    label: 'CMS & Tools',
     color: 'green',
-    items: ['Tailwind CSS', 'Framer Motion', 'Figma', 'CI/CD'],
+    items: ['Contentful', 'Tailwind CSS', 'GraphQL', 'CI/CD', 'Git'],
   },
 ]

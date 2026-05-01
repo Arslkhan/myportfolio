@@ -7,9 +7,9 @@ describe('About', () => {
     expect(screen.getByText('About')).toBeInTheDocument()
   })
 
-  it('renders GoldenScent in bio', () => {
+  it('renders Next.js in bio', () => {
     render(<About />)
-    expect(screen.getByText('GoldenScent')).toBeInTheDocument()
+    expect(screen.getByText('Next.js')).toBeInTheDocument()
   })
 
   it('renders location text', () => {
