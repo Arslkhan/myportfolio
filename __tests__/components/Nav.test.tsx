@@ -17,7 +17,7 @@ describe('Nav', () => {
 
   it('nav links have correct href attributes', () => {
     render(<Nav />)
-    expect(screen.getByText('Work').closest('a')).toHaveAttribute('href', '#work')
+    expect(screen.getByText('Work').closest('a')).toHaveAttribute('href', '#projects')
     expect(screen.getByText('Contact').closest('a')).toHaveAttribute('href', '#contact')
   })
 })
