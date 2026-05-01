@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { projects } from '@/data/projects'
 import { fadeUpVariant, staggerContainerVariant, sectionProps } from '@/lib/animations'
@@ -35,20 +36,27 @@ export default function Projects() {
 
         <div className="bg-[var(--surface)] border border-[rgba(167,139,250,0.2)] rounded-2xl overflow-hidden mb-4">
           <div
-            className="h-32 md:h-40 flex items-center justify-center relative"
-            style={{ background: featured.gradient }}
+            className="h-40 md:h-52 relative overflow-hidden"
+            style={!featured.screenshot ? { background: featured.gradient } : undefined}
           >
-            <span className="absolute top-3 right-3 px-2.5 py-1 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full text-[9px] font-bold tracking-widest text-white uppercase">
+            {featured.screenshot ? (
+              <Image
+                src={featured.screenshot}
+                alt={`${featured.title} screenshot`}
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 800px"
+              />
+            ) : (
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-black bg-gradient-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent">
+                  {featured.title}
+                </p>
+              </div>
+            )}
+            <span className="absolute top-3 right-3 px-2.5 py-1 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full text-[9px] font-bold tracking-widest text-white uppercase z-10">
               Personal Project
             </span>
-            <div className="text-center">
-              <p className="text-2xl font-black bg-gradient-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent">
-                {featured.title}
-              </p>
-              {featured.liveUrl && (
-                <p className="text-xs text-white/40 mt-1">{new URL(featured.liveUrl).hostname}</p>
-              )}
-            </div>
           </div>
           <div className="p-5">
             <div className="flex justify-between items-start gap-4 flex-wrap">
@@ -98,12 +106,25 @@ export default function Projects() {
             <motion.div
               key={project.title}
               variants={fadeUpVariant}
-              className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4"
+              className="bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden"
             >
               <div
-                className="h-12 rounded-lg mb-3"
-                style={{ background: project.gradient }}
-              />
+                className="h-28 relative overflow-hidden"
+                style={!project.screenshot ? { background: project.gradient } : undefined}
+              >
+                {project.screenshot ? (
+                  <Image
+                    src={project.screenshot}
+                    alt={`${project.title} screenshot`}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                  />
+                ) : (
+                  <div className="h-full" style={{ background: project.gradient }} />
+                )}
+              </div>
+              <div className="p-4">
               <h3 className="text-sm font-bold mb-1">{project.title}</h3>
               <p className="text-xs text-white/40 leading-relaxed mb-2.5">{project.description}</p>
               <div className="flex gap-1.5 flex-wrap mb-2.5">
@@ -123,6 +144,7 @@ export default function Projects() {
                   Live ↗
                 </a>
               )}
+              </div>
             </motion.div>
           ))}
         </motion.div>

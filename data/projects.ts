@@ -7,6 +7,7 @@ export interface Project {
   featured: boolean
   type: 'personal' | 'professional'
   gradient: string
+  screenshot?: string
 }
 
 export const projects: Project[] = [
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     featured: true,
     type: 'personal',
     gradient: 'linear-gradient(135deg, rgba(167,139,250,0.25), rgba(96,165,250,0.2), rgba(52,211,153,0.1))',
+    screenshot: '/screenshots/tradequoter.png',
   },
   {
     title: 'GoldenScent',
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     featured: false,
     type: 'professional',
     gradient: 'linear-gradient(135deg, rgba(167,139,250,0.2), rgba(96,165,250,0.1))',
+    screenshot: '/screenshots/goldenscent.png',
   },
   {
     title: 'Al Marwan Machinery',
@@ -36,6 +39,7 @@ export const projects: Project[] = [
     featured: false,
     type: 'professional',
     gradient: 'linear-gradient(135deg, rgba(96,165,250,0.15), rgba(167,139,250,0.1))',
+    screenshot: '/screenshots/almarwan.png',
   },
   {
     title: 'Tile Mountain',
@@ -45,6 +49,7 @@ export const projects: Project[] = [
     featured: false,
     type: 'professional',
     gradient: 'linear-gradient(135deg, rgba(52,211,153,0.15), rgba(96,165,250,0.1))',
+    screenshot: '/screenshots/tilemountain.png',
   },
   {
     title: 'Bathroom Mountain & Walls and Floors',
@@ -54,5 +59,6 @@ export const projects: Project[] = [
     featured: false,
     type: 'professional',
     gradient: 'linear-gradient(135deg, rgba(167,139,250,0.15), rgba(52,211,153,0.1))',
+    screenshot: '/screenshots/bathroommountain.png',
   },
 ]
