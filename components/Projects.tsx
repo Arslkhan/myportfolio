@@ -92,9 +92,6 @@ export default function Projects() {
         <p className="text-[10px] tracking-[2px] text-white/30 uppercase mb-3">Professional Work</p>
         <motion.div
           variants={staggerContainerVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-3"
         >
           {professional.map((project) => (

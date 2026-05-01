@@ -24,9 +24,6 @@ export default function Skills() {
               </p>
               <motion.div
                 variants={staggerContainerVariant}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
                 className="flex flex-wrap gap-2"
               >
                 {group.items.map((item) => (
