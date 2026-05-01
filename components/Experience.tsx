@@ -51,10 +51,10 @@ export default function Experience() {
             <motion.div
               key={exp.company}
               variants={fadeUpVariant}
-              className="flex justify-between items-center px-4 py-3 border border-dashed border-white/[0.06] rounded-xl"
+              className="flex justify-between items-center px-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl"
             >
-              <p className="text-xs text-white/30">{exp.company}</p>
-              <p className="text-[10px] text-white/20">{exp.period}</p>
+              <p className="text-xs text-white/55">{exp.company}</p>
+              <p className="text-xs text-white/40">{exp.period}</p>
             </motion.div>
           ))}
         </motion.div>
