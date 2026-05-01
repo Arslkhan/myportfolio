@@ -61,6 +61,13 @@ export default function Hero() {
           >
             Get In Touch
           </button>
+          <a
+            href="/cv.pdf"
+            download
+            className="text-xs text-white/40 hover:text-white/70 transition-colors underline underline-offset-4"
+          >
+            Download CV
+          </a>
         </motion.div>
 
         <motion.p variants={fadeUpVariant} className="mt-5 text-xs text-white/30">
