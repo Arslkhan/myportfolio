@@ -18,9 +18,6 @@ export default function Experience() {
 
         <motion.div
           variants={staggerContainerVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
           className="flex flex-col gap-4"
         >
           {expanded.map((exp) => (
