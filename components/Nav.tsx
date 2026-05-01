@@ -48,7 +48,9 @@ export default function Nav() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'backdrop-blur-md bg-[rgba(15,12,41,0.7)] border-b border-white/[0.08]' : ''
+      scrolled || menuOpen
+        ? 'backdrop-blur-md bg-[rgba(15,12,41,0.85)] border-b border-white/[0.08]'
+        : ''
     }`}>
       {/* Top bar */}
       <div className="flex items-center justify-between px-8 py-4">
@@ -88,16 +90,16 @@ export default function Nav() {
 
       {/* Mobile drawer */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col px-8 pb-6 gap-5 border-t border-white/[0.06]">
+        <div className="md:hidden flex flex-col px-8 pt-2 pb-8 gap-6 border-t border-white/[0.08]">
           {NAV_LINKS.map(({ label, id }) => (
             <a
               key={id}
               href={`#${id}`}
               onClick={(e) => { scrollTo(e, id); setMenuOpen(false) }}
-              className={`text-sm transition-colors ${
+              className={`text-base font-medium transition-colors ${
                 activeId === id
-                  ? 'text-accent-purple font-semibold'
-                  : 'text-white/55 hover:text-white'
+                  ? 'text-accent-purple'
+                  : 'text-white/70 hover:text-white'
               }`}
             >
               {label}
