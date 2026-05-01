@@ -45,7 +45,7 @@ export default function Contact() {
             GitHub
           </a>
           <a
-            href="/cv.pdf"
+            href="/Arsalan_Resume_2026.pdf"
             download
             className="px-6 py-3 border border-white/15 text-white/65 rounded-full text-sm hover:border-white/30 hover:text-white/90 transition-all"
           >
