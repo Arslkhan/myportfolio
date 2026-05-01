@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { scrollToSection } from '@/lib/scroll'
 
 const NAV_LINKS = [
-  { label: 'Work', id: 'work' },
+  { label: 'Work', id: 'projects' },
   { label: 'About', id: 'about' },
   { label: 'Stack', id: 'stack' },
   { label: 'Contact', id: 'contact' },
